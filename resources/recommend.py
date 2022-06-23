@@ -105,6 +105,7 @@ class MovieRecomResource(Resource) :
                 'movie_list' : recomm_movie_list.iloc[ 0 : 19+1 , ].to_dict('records') }
 
 class MovieRecomRealTimeResource(Resource) :
+    @jwt_required()
     def get(self) :
         
         # 1. 클라이언트로부터 데이터를 받아온다.
