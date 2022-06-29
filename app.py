@@ -39,3 +39,4 @@ api.add_resource(MovieRecomRealTimeResource, '/movie/recommend')
 
 if __name__=="__main__" :
     app.run()
+    print("2")
