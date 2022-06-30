@@ -14,7 +14,6 @@ from utils import check_password, hash_password
 
 class UserRegisterResource(Resource) :
     def post(self) :
-        print("1")
     #    {
     #         "email": "abc@naver.com",
     #         "password": "1234",
